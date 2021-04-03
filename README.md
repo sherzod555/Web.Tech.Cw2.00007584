@@ -10,7 +10,9 @@
 <p>In order to run the app locally, please do the following things:</p>
 <h6>Run "npm install" on the erminal in order to install all the dependancies of the project</h6>
 <p>Start the project by typing "node app" on the terminal and follow the link on localhost</p>
-<p>You can also view the project by going to the github account :         , or by wisiting the website on glitch:   </p>
+<p>You can also view the project by going to the github account :https://github.com/wiut00007584/Web.Tech.Cw2.00007584.git, 
+ 
+ or by wisiting the website on glitch: https://vast-hallowed-planet.glitch.me</p>
 
 <h1>App dependancies are:</h1>
 <li>Express Js</li>
