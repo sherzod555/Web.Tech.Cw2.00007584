@@ -1,0 +1,13 @@
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
+
+header.navbar
+  h1.logo 
+    a(href="/") Blog App
+
+  nav.nav
+    ul.nav-items
+      li.nav-item 
+        +link('/blogpost', 'All Blogs')(class="nav-link")
+      li.nav-item 
+        +link('/archive', 'Archive')(class="nav-link")

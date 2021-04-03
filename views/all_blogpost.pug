@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  main.all-blogpost  
+    if blogpost.length
+      ul.blogpost
+        each blogposts in blogpost
+          li.blogpost-item 
+            a(href=`blogpost/${ blogpost.id }`)= blogpost.title
+            a.delete-blogpost(href=`blogpost/${ blogpost.id }/delete`) Delete
+    else
+      p.empty Dear user, you have not created a blog yet

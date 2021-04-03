@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+  main.all-blogpost  
+    h2.blogpost-title= blogpost.title
+      if !blogpost.archive
+        a.archive-link(href=`/blogpost/${ note.id }/archive`) Archive note
+    p.blogpost-body#body= blogpost.body 
+    
+    
+    script(type="text/javascript").
+      window.onload = function () {
+        document.getElementById('body').innerHTML = marked(document.getElementById('body').innerHTML);
+      }
+

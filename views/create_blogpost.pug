@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+  main.create-blogpost
+    h2.form-title Create Blog Post
+    
+    if success
+      p.success Blog was created and added successfully
+
+    if error
+      p.error Please add a blog (title & body) before submitting
+
+    form(method="POST")
+      label.label Title
+      input(class="blogpost-input" name="title")
+      
+      label.label Body
+      textarea(class="blogpost-input" name="body" rows="10")
+      button.create-blogpost-btn Create a blog
